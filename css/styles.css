@@ -267,4 +267,72 @@ img {
 .article--hidden {
   display: none;
 }
+
+.page-footer {
+  margin-right: 5%;
+  background-color: #316099;
+  border-top-right-radius: 200px;
+  padding-bottom: 7%;
+}
+
+.work {
+  padding-top: 10%;
+  margin: 5%;
+}
+
+.work__title {
+  font-family: "Helvetica", sans-serif;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  color: white;
+  font-weight: normal;
+  margin: 5% 0 0;
+  padding-right: 30%;
+}
+
+.work__text {
+  font-family: "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: white;
+  opacity: 0.6;
+}
+
+.work__btn {
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  height: 5.6rem;
+  background-color: #5A98D0;
+  color: white;
+}
+
+.contact {
+  margin: 5% 5% 0;
+}
+
+.contact__title {
+  font-size: 2rem;
+  font-family: "Helvetica", sans-serif;
+  color: white;
+}
+
+.contact__list {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.contact__elem {
+  margin: 5% 0;
+}
+
+.contact__link {
+  color: white;
+  text-decoration: none;
+}
 /*# sourceMappingURL=styles.css.map */
