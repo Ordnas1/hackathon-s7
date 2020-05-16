@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon Semana 7</title>
     <script src="https://kit.fontawesome.com/62433110b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Se usó OOCSS y BEM-->
@@ -21,7 +22,8 @@
         <p class="page-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </header>
     <main class="page-main">
-        <input type="text" name="searchbar" id="" class="page-main__searchbar">
+        <input type="text" name="searchbar" id="" class="page-main__searchbar" 
+               placeholder="Search Article">
         <h2 class="page-main__title">Popular</h2>
         <section class="popular">
 
@@ -42,8 +44,8 @@
                             </span>
                         </div>
                         <div class="popular-article__social">
-                            <i class="fas fa-bookmark"></i>
-                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
                         </div>
                     </footer>
                 </section>
@@ -66,8 +68,8 @@
                             </span>
                         </div>
                         <div class="popular-article__social">
-                            <i class="fas fa-bookmark"></i>
-                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
                         </div>
                     </footer>
                 </section>
@@ -90,14 +92,14 @@
                             </span>
                         </div>
                         <div class="popular-article__social">
-                            <i class="fas fa-bookmark"></i>
-                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
                         </div>
                     </footer>
                 </section>
             </article>
 
-            <article class="popular-article">
+            <article class="popular-article popular-article--hidden">
                 <img src="images/img-post-31.png" alt="" class="popular-article__photo">
                 <section class="popular-article__text">
                     <h3 class="popular-article__title">Feugiat sodales at nullam tellus.</h3>
@@ -114,141 +116,144 @@
                             </span>
                         </div>
                         <div class="popular-article__social">
-                            <i class="fas fa-bookmark"></i>
-                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
                         </div>
                     </footer>
                 </section>
             </article>
         </section>
 
-        <a href="" class="main page__link">See all popular articles</a>
+        <div class="page-main__linkbox">
+            <a href="" class="page-main__link">See all popular articles</a>
+        </div>  
 
         <hr>
 
         <h2 class="page-main__title">All Article</h2>
 
-        <article class="article">
-            <img src="images/img-post-4.png" alt="" class="article__photo">
-            <section class="article__text">
-                <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
-                <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
-                <footer class="article__footer">
-                    <div class="article__info">
-                        <h4 class="article__author">
-                            Samatha Leuthex
-                        </h4>
-                        <span class="article__datetime">
-                            May 5, 3 min read
-                        </span>
-                    </div>
-                    <div class="article__social">
-                        <i class="fas fa-bookmark"></i>
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                </footer>
-            </section>
-        </article>
+        <section class="all-article">
+            <article class="article">
+                <img src="images/img-post-4.png" alt="" class="article__photo">
+                <section class="article__text">
+                    <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
+                    <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+                    <footer class="article__footer">
+                        <div class="article__info">
+                            <h4 class="article__author">
+                                Samatha Leuthex
+                            </h4>
+                            <span class="article__datetime">
+                                May 5, 3 min read
+                            </span>
+                        </div>
+                        <div class="article__social">
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
+                        </div>
+                    </footer>
+                </section>
+            </article>
 
-        <article class="article">
-            <img src="images/img-post-5.png" alt="" class="article__photo">
-            <section class="article__text">
-                <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
-                <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
-                <footer class="article__footer">
-                    <div class="article__info">
-                        <h4 class="article__author">
-                            Samatha Leuthex
-                        </h4>
-                        <span class="article__datetime">
-                            May 5, 3 min read
-                        </span>
-                    </div>
-                    <div class="article__social">
-                        <i class="fas fa-bookmark"></i>
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                </footer>
-            </section>
-        </article>
+            <article class="article">
+                <img src="images/img-post-5.png" alt="" class="article__photo">
+                <section class="article__text">
+                    <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
+                    <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+                    <footer class="article__footer">
+                        <div class="article__info">
+                            <h4 class="article__author">
+                                Samatha Leuthex
+                            </h4>
+                            <span class="article__datetime">
+                                May 5, 3 min read
+                            </span>
+                        </div>
+                        <div class="article__social">
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
+                        </div>
+                    </footer>
+                </section>
+            </article>
 
-        <article class="article">
-            <img src="images/img-post-6.png" alt="" class="article__photo">
-            <section class="article__text">
-                <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
-                <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
-                <footer class="article__footer">
-                    <div class="article__info">
-                        <h4 class="article__author">
-                            Samatha Leuthex
-                        </h4>
-                        <span class="article__datetime">
-                            May 5, 3 min read
-                        </span>
-                    </div>
-                    <div class="article__social">
-                        <i class="fas fa-bookmark"></i>
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                </footer>
-            </section>
-        </article>
+            <article class="article article--hidden">
+                <img src="images/img-post-6.png" alt="" class="article__photo">
+                <section class="article__text">
+                    <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
+                    <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+                    <footer class="article__footer">
+                        <div class="article__info">
+                            <h4 class="article__author">
+                                Samatha Leuthex
+                            </h4>
+                            <span class="article__datetime">
+                                May 5, 3 min read
+                            </span>
+                        </div>
+                        <div class="article__social">
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
+                        </div>
+                    </footer>
+                </section>
+            </article>
 
-        <article class="article">
-            <img src="images/img-post-7.png" alt="" class="article__photo">
-            <section class="article__text">
-                <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
-                <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
-                <footer class="article__footer">
-                    <div class="article__info">
-                        <h4 class="article__author">
-                            Samatha Leuthex
-                        </h4>
-                        <span class="article__datetime">
-                            May 5, 3 min read
-                        </span>
-                    </div>
-                    <div class="article__social">
-                        <i class="fas fa-bookmark"></i>
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                </footer>
-            </section>
-        </article>
+            <article class="article article--hidden">
+                <img src="images/img-post-7.png" alt="" class="article__photo">
+                <section class="article__text">
+                    <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
+                    <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+                    <footer class="article__footer">
+                        <div class="article__info">
+                            <h4 class="article__author">
+                                Samatha Leuthex
+                            </h4>
+                            <span class="article__datetime">
+                                May 5, 3 min read
+                            </span>
+                        </div>
+                        <div class="article__social">
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
+                        </div>
+                    </footer>
+                </section>
+            </article>
 
-        <article class="article">
-            <img src="images/img-post-8.png" alt="" class="article__photo">
-            <section class="article__text">
-                <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
-                <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
-                <footer class="article__footer">
-                    <div class="article__info">
-                        <h4 class="article__author">
-                            Samatha Leuthex
-                        </h4>
-                        <span class="article__datetime">
-                            May 5, 3 min read
-                        </span>
-                    </div>
-                    <div class="article__social">
-                        <i class="fas fa-bookmark"></i>
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                </footer>
-            </section>
-        </article>
-
-        <a href="" class="main page__link">new post</a>
+            <article class="article article--hidden">
+                <img src="images/img-post-8.png" alt="" class="article__photo">
+                <section class="article__text">
+                    <h3 class="article__title">Feugiat sodales at nullam tellus.</h3>
+                    <p class="article__resume">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+                    <footer class="article__footer">
+                        <div class="article__info">
+                            <h4 class="article__author">
+                                Samatha Leuthex
+                            </h4>
+                            <span class="article__datetime">
+                                May 5, 3 min read
+                            </span>
+                        </div>
+                        <div class="article__social">
+                            <i class="fas fa-bookmark fa-2x"></i>
+                            <i class="fas fa-share-alt fa-2x"></i>
+                        </div>
+                    </footer>
+                </section>
+            </article>
+        </section>
+        <a href="" class="page-main__link">new post</a>
     </main>
 
     <footer class="page-footer">

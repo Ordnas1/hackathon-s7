@@ -1,0 +1,250 @@
+//variables
+$f-title: 'Helvetica', sans-serif;
+$f-text: 'Arial', sans-serif;
+
+//Mixins 
+@mixin responsive($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content
+    }
+};
+
+//MAIN CSS ---------------------------------------------------------
+
+//Global 
+
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px; //calculos de rem
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Nav
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
+
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-family: $f-text;
+        color: black;
+
+        &--current {
+            font-weight: 700;
+            color: #1F3F68;
+        }
+    }
+}
+
+// Header
+
+.page-header {
+    background: linear-gradient(255.16deg, #98D0FC 2.46%, #3481D7 93.24%);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 20%;
+
+    &__title {
+        font-family: $f-text;
+        font-style: bold;
+        text-align: center;
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        color: white;
+        padding: 0 10%;
+    }
+
+    &__text {
+        font-family: $f-text;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        text-align: center;
+        color: white;
+        padding: 0 2%;
+    }
+}
+
+// Main Document
+
+.page-main {
+    margin: 5%;
+
+    &__searchbar {
+        width: 100%;
+        height: 5.6rem;
+        border-radius: 10px;
+        background-color: #F4F4F4;
+        border: none;
+        padding: 0 5%;
+    }
+
+    &__title {
+        font-family: $f-title;
+        font-weight: bold;
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        color: #356EAD;
+        opacity: 0.8;
+    }
+
+    &__linkbox {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    &__link {
+        font-family: $f-title;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        text-decoration: none;
+        color: #356EAD;
+        opacity: 0.8;
+        text-transform: uppercase;
+    }
+}
+
+// Popular aticle
+
+.popular-article {
+    margin:5% 0;
+
+    &__title{
+        font-family: $f-title;
+        font-weight: bold;
+        font-size: 2.0rem;
+        line-height: 3.8rem;
+        color: #1F3F68;
+    }
+
+    &__resume {
+        font-family: $f-text;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        opacity: 0.6;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__author {
+        font-family: $f-title;
+        font-weight: bold;
+        color: #1F3F68;
+        font-size: 14px;
+        line-height: 2.4px;
+    }
+
+    &__datetime {
+        font-family: $f-text;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #1F3F68;
+        opacity: 0.4;
+    }
+
+    &__social {
+        color: #356EAD;
+        width: 25%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
+
+// All Articles 
+
+.all-article {
+    margin: 5% 0;
+}
+
+.article  {
+    margin:5% 0;
+
+    &__title{
+        font-family: $f-title;
+        font-weight: bold;
+        font-size: 2.0rem;
+        line-height: 3.8rem;
+        color: #1F3F68;
+    }
+
+    &__resume {
+        font-family: $f-text;
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        opacity: 0.6;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__author {
+        font-family: $f-title;
+        font-weight: bold;
+        color: #1F3F68;
+        font-size: 14px;
+        line-height: 2.4px;
+    }
+
+    &__datetime {
+        font-family: $f-text;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: #1F3F68;
+        opacity: 0.4;
+    }
+
+    &__social {
+        color: #356EAD;
+        width: 25%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
